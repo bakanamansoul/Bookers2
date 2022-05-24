@@ -11,7 +11,7 @@ class BooksController < ApplicationController
     @books =Book.all
     @book.user_id = current_user.id
     @book.save
-    redirect_to book_path
+    redirect_to book_path(@book)
   end
 
   def show
