@@ -42,7 +42,8 @@
       <% end %>
     </header>
     <main>
-    <%= yield %>
+      <%= flash[:notice] %>
+      <%= yield %>
     </main>
     <footer>
       CopyRight Infratop.inc
