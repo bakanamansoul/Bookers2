@@ -48,15 +48,17 @@
                 <% end %>
               </li>
               <li>
-                <%= link_to "About", about_path %>
+                <%= link_to about_path, class: "nav-link text-light" do %>
+                  <i class="fas fa-link"></i> About
+                <% end %>
               </li>
               <li>
-                <%= link_to new_user_registration_path class: "nav-link text-light" do %>
+                <%= link_to new_user_registration_path, class: "nav-link text-light" do %>
                   <i class="fas fa-user-plus"></i> Sign in
                 <% end %>
               </li>
               <li>
-                <%= link_to new_user_session_path class: "nav-link text-light" do %>
+                <%= link_to new_user_session_path, class: "nav-link text-light" do %>
                   <i class="fas fa-sign-in-alt"></i> Log in
                 <% end %>
               </li>
